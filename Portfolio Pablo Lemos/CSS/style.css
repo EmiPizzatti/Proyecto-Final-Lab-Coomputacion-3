@@ -1,0 +1,374 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+html {
+    font-family:system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-image: url(../img/fondopage.jpg);
+}
+li {
+    list-style: none;
+}
+/* NAVEGADOR O ENCABEZADO */
+.logo_header {
+    width: 3%;
+    padding: 2px;
+    float: inline-start;
+}
+header {
+    background-color: rgba(43, 43, 43, 0.781);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav {
+    align-content: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    right: 2%;
+}
+nav a {
+    padding: 0.5rem;
+}
+/* PIE DE PAGINA */
+footer {
+    position: absolute;
+    bottom: 0%;
+    padding: 1px;
+    background-color: rgba(26, 26, 26, 0.781);
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+}
+#enlaces {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    bottom: 30%;
+    left: 3%;
+}
+#enlaces a  {
+    margin-left: 15px;
+}
+footer ul {
+    display: flex;
+    margin-top: 1.3%;
+}
+#redes img {
+    width: 45%;
+    padding: 2px;
+}
+#redes {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+}
+/* INICIO */
+.logo_inicio {
+    width: 33%;
+    padding: 5px;
+    position: absolute;
+    bottom: 12%;
+    left: 33%;
+}
+/* TATUAJES */
+#encabezado {
+    margin: 1%;
+    text-align: center;
+    text-shadow: 2px 1px 4px black;
+}
+#retroceder, #avanzar {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    height: max-content;
+    margin-top: 22%;
+}
+#retroceder img, #avanzar img {
+    width: 40px;
+    padding: 10px;
+}
+.carousel {
+    max-width: 800px;
+    margin: 0px auto;
+    display: flex;
+}
+#imagen {
+    width: 100%;
+    height: 25rem;
+    background-size:cover;
+}
+/** ABOUT ME **/
+.html_aboutme{
+    background-image: url(../img/artist-2238780_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.back .card1 {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    width: 600px;
+    padding: 20px;
+    align-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+.card1 h1 {
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    padding-bottom: 16px;
+}
+/** CONTACTO **/
+form {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    width: 20%;
+}
+form label {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    margin: 3px;
+}
+form input {
+    margin: 6px;
+}
+#textarea {
+    width: 260px;
+    margin: 10px;
+}
+#subir {
+    margin-left: 40%;
+    width: 60px;
+}
+.html_contact{
+    background-image: url(../img/phone-3179343_1920.jpg);
+}
+/** FILTRO BÚSQUEDA DE TATUAJES **/
+.box {
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    margin: 10px auto;
+    top: 10%;
+    left: 10%;
+}
+#busqueda {
+    padding: 7px 10px;
+    width: auto;
+}
+.box button {
+    width: 60px;
+    margin-left: 30px;
+    border-radius: 10%;
+    font-size: 16px;
+}
+.box button:hover {
+    background-color: black;
+    color: white;
+}
+.contenedor,
+.contenedor1 {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+} 
+.contenedor1 {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 1fr);
+    margin-bottom: 40px;
+}  
+.tatuajes {
+    display: block;
+    height: 80px;
+}
+.tatuajes1 {
+    font-size: 18px;
+}
+.precioDolar {
+    font-size: 15px;
+    color: #aaa;
+}  
+.foto {
+    float: left;
+    background-color: white;
+    border-radius: 100%;
+    width: 60px;
+    height: 50px;
+    margin-right: 20px;
+    background-size: cover;
+    background-position: center;
+} 
+.foto1 {
+    background-image: url(../img/productos/tattoo-2894318_640.jpg);
+}
+.foto2 {
+    background-image: url(../img/productos/mendi-5008711_640.jpg);
+}
+.foto3 {
+    background-image: url(../img/productos/flower-32541_640.png);
+}
+.foto4 {
+    background-image: url(../img/productos/man-890887_1280.jpg);
+}
+#maps {
+    position: absolute;
+    right: 8%;
+    top: 12%;
+    border-radius: 3%;
+    box-shadow: 1px 1px 2px black;
+}
+/** ENCABEZADO RESPONSIVE **/
+.btnMenu {
+    width: 25px; 
+    aspect-ratio: 1/1; 
+    display: none; 
+    cursor: pointer; 
+    margin-left: 64%;
+}
+.line {
+    width: 100%; 
+    background-color: black; 
+    height: 4px; 
+    border-radius: 10px; 
+}
+.menuMobile {
+    width: 200px; 
+    background-color: rgba(2, 2, 2, 0.822); 
+    position: absolute; 
+    top: 30px; 
+    right: -300px;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.3);
+    display: none; 
+    transition: all 1s; 
+}
+.menuMobile a {
+    display: block; 
+}
+.menuMobileOpen {
+    display: absolute;
+    right: 50px; 
+}
+/*RESPONSIVE*/
+@media (max-width: 800px) {
+    .btnMenu {
+      display: grid;
+    }
+    .menuDesktop {
+      display: none; 
+    }
+    .menuMobile {
+        position: absolute;
+      display: block; 
+    }
+    .contenedor {
+      grid-template-columns: auto;
+      width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    /**HEADER**/
+    .logo_header {
+        width: 10%;
+    }
+    .btnMenu{
+        position: relative;
+        margin-left: 80%;
+    }
+    /**INICIO**/
+    .logo_inicio {
+        position: absolute;
+        left: 5%;
+        bottom: 20%;
+        width: 90%;
+    }
+    /**ABOUT ME**/
+    .html_aboutme {
+        background-image: url(../img/fondopage.jpg);
+        background-size: 300%;
+    }
+    .back .card1 {
+        position: relative;
+        width: 95%;
+        background-image: url(../img/artist-2238780_1920.jpg);
+        font-size: 13px;
+        margin-top: 30%;
+        margin-left: -2%;
+    }
+    .card1 h1 {
+        font-size: 40px;
+    }
+    /**WORKS**/ 
+    #encabezado {
+        margin: 5%;
+    }
+    #retroceder, #avanzar {
+        margin-top: 42%;
+    }
+    #imagen {
+        margin-top: 5%;
+    }
+    /**CONTACTO**/
+    form {
+        margin-left: -15%;
+        margin-top: 16%;
+    }
+    .html_contact {
+        background-image: url(../img/phone-3179343_1920.jpg);
+    }
+    /**BUSQUEDA DE TATUAJES**/
+    #maps {
+        display: none;
+    }
+    .box {
+        position:absolute;
+        left:8%;
+        top:20%;
+        width: 85%;
+    }
+    /**FOOTER**/
+    footer {
+        position: absolute;
+        bottom: 0%;
+        font-size: 16px;
+    }
+    #enlaces {
+        position: absolute;
+        bottom: 60%;
+        left: 25%;
+    }
+    #redes img {
+        width: 20px;
+    }
+    #redes {
+        position: absolute;
+        bottom: 2%;
+        left: 35%;
+    }
+
+}
